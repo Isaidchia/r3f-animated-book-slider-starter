@@ -3,12 +3,15 @@ import { Book } from "./Book";
 export const Experience = () => {
   return (
     <>
+    {/* <hemisphereLight skyColor="white" groundColor="lightgrey" intensity={0.3} /> */}
     <Book />
       <OrbitControls />
-      <Environment preset="studio"></Environment>
+      {/* <Environment preset="studio"></Environment> */}
+      <Environment preset="sunset" background={false} intensity={0.8} />
+
       <directionalLight
         position={[2, 5, 2]}
-        intensity={0.2}
+        intensity={0.8}
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -21,3 +24,14 @@ export const Experience = () => {
     </>
   );
 };
+
+// apartment: string;
+// city: string;
+// dawn: string;
+// forest: string;
+// lobby: string;
+// night: string;
+// park: string;
+// studio: string;
+// sunset: string;
+// warehouse: string;
