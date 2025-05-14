@@ -17,6 +17,13 @@ const pictures = [
   "DSC02031",
   "DSC02064",
   "DSC02069",
+  "DSC02069",
+  "DSC02069",
+  "DSC02069",
+  "DSC02069",
+  "DSC02069",
+  "DSC02069",
+  "DSC02069",
 ];
 
 export const pageAtom = atom(0);
@@ -53,6 +60,7 @@ export const UI = () => {
     9: "Jan",
     10: "Feb",
     11: "Mar",
+    12: "Apr",
   };
 
   return (
