@@ -207,14 +207,14 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
         insideCurveStrength * insideCurveIntensity * targetRotation -
         outsideCurveStrength * outsideCurveIntensity * targetRotation +
         turningCurveStrength * turningIntensity * targetRotation;
-      let foldRotationAngle = degToRad(Math.sign(targetRotation) * 2);
-      if (bookClosed) {
+        let foldRotationAngle = degToRad(Math.sign(targetRotation) * 2);
+        if (bookClosed) {
         if (i === 0) {
-          rotationAngle = targetRotation;
-          foldRotationAngle = 0;
+            rotationAngle = targetRotation;
+            foldRotationAngle = 0;
         } else {
-          rotationAngle = 0;
-          foldRotationAngle = 0;
+            rotationAngle = 0;
+            foldRotationAngle = 0;
         }
       }
       easing.dampAngle(
