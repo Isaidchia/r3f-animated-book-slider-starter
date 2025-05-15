@@ -1,29 +1,20 @@
 import { atom, useAtom } from "jotai";
 
 const pictures = [
+  "preface",
   "May",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
-  "DSC01011",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
-  "DSC01103",
-  "DSC01145",
-  "DSC01420",
-  "DSC01461",
-  "DSC01489",
-  "DSC02031",
-  "DSC02064",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
-  "DSC02069",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "epilogue",
 ];
 
 export const pageAtom = atom(0);
@@ -49,18 +40,13 @@ export const UI = () => {
   const [page, setPage] = useAtom(pageAtom);
 
   const monthDict = {
-    1: "May",
-    2: "Jun",
-    3: "Jul",
-    4: "Aug",
-    5: "Sep",
-    6: "Oct",
-    7: "Nov",
-    8: "Dec",
-    9: "Jan",
-    10: "Feb",
-    11: "Mar",
-    12: "Apr",
+    1: "Preface",
+    2: "Jun-Jul",
+    3: "Aug-Sep",
+    4: "Oct-Nov",
+    5: "Dec-Jan",
+    6: "Feb-Mar",
+    7: "Epilogue",
   };
 
   return (
